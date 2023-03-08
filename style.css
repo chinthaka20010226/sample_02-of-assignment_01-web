@@ -1,3 +1,4 @@
+/* Gloabal */
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,42 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
+.active {
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Navigation */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* color: rgb(0, 0, 0); */
+}
+.logo {
+    color: #000000;
+    font-weight: bold;
+    padding-left: 90px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li a {
+    margin: 0 30px;
+    color: rgb(0, 0, 0);
+}
+
+/* Header */
 header {
     width: 100vw;
     height: 100vh;
@@ -20,7 +57,7 @@ header {
 }
 .header-content {
     margin-bottom: 150px;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 .header-content h2 {
@@ -44,11 +81,54 @@ header {
 }
 .ctn {
     padding: 10px;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     background-color: #fc036b;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+}
+.fa-solid {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Mobile device */
+@media only screen and (max-width:600px){
+    .fa-solid {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #929cf4;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+}
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
 }
