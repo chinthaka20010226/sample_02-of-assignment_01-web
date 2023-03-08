@@ -19,11 +19,16 @@ ul {
     font-weight: bold;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 /* Navigation */
 .navbar {
     position: absolute;
     top: 0;
     left: 0;
+    /* position: fixed; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -96,6 +101,47 @@ header {
     font-size: 30px;
     cursor: pointer;
     display: none;
+}
+
+/* Events */
+.events {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(73, 73, 126);
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    /* background: cyan; */
+}
+.row .col img {
+    width: 400px;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.evens .row {
+    margin-top: 50px;
+}
+h3 {
+    font-size: 3vmin;
+    color: #929cf4;
+    margin: 20px auto;
+}
+p {
+    color: #a2a6ce;
+    padding: 0px 40px;
+}
+.events .ctn {
+    margin-top: 30px;
 }
 
 /* Mobile device */
