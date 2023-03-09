@@ -277,7 +277,7 @@ p {
         -moz-transition: all 0.5s ease;
         -ms-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
-}
+    }
     .mobile-menu {
         margin-top: 0px;
         border-bottom-right-radius: 30%;
@@ -291,22 +291,31 @@ p {
     }
     .row .col {
         margin: 20px auto;
+        flex-direction: column;
     }
     .col img {
         max-width: 90%;
+        /* flex-direction: column; */
     }
     /* explore */
     .explore-content {
         width: 100%;
+        flex-direction: column;
     }
     .tours .col-01 {
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .tours .col-02 {
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .tours .col-03 {
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .col-02 div {
         justify-content: center;
